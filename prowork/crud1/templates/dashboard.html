@@ -1,0 +1,22 @@
+{% extends 'index.html' %} 
+{% block content %}
+    
+<div style="padding:1px 16px;height:1000px;">
+
+  <div align="center">
+    <h1>Fill Up This Form</h1><br>
+    <p>You have to fill up this form correctly:</p>
+    <form method="post" data-form-title="FILL FORM">
+    {% csrf_token %}
+      <input type="hidden">
+      <p><input type="text" placeholder="Account Name" required="" name="Account Name"></p>
+      <p><input type="Email" placeholder="Email*" required="" name="Email"></p>
+      <p><input type="Contact" placeholder="Contact"  name="Contact"></p>
+      <p><input type="text" placeholder="Description About Your Self" rows="7" name="Description"></p>
+      <p><button type="submit">Submit</button></p>
+    </form>
+  </div>
+  
+</div>
+
+{% endblock  %}

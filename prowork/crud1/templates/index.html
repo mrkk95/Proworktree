@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="{% url 'home' %}">Home</a></li>
+  <li><a href="{% url 'login_url' %}">Login</a></li>
+  <li><a href="{% url 'register_url' %}">Register</a></li>
+  <li><a href="{% url 'logout_url' %}">Logout</a></li>
+</ul>
+{% block content %}
+<div style="padding:1px 16px;height:1000px;">
+  <h2>PROWORKTREE PROFESSIONAL SERVICES PRIVATE LIMITED</h2>
+  <p>Proworktree Professional Services Private Limited is a Private incorporated on 02 June 2017. It is classified as Non-govt company and is registered at Registrar of Companies, Hyderabad. Its authorized share capital is Rs. 100,000 and its paid up capital is Rs. 100,000. It is inolved in Business activities n.e.c.</p>
+  <p>Proworktree Professional Services Private Limited's Annual General Meeting (AGM) was last held on 30 September 2019 and as per records from Ministry of Corporate Affairs (MCA), its balance sheet was last filed on 31 March 2019.
+</p>
+  <p>Directors of Proworktree Professional Services Private Limited are Om Prakash Tiwari and Chetan Prakash Tiwari.
+</p>
+  <p>Proworktree Professional Services Private Limited's Corporate Identification Number is (CIN) U74999TG2017PTC117518 and its registration number is 117518.Its Email address is chetan@proworktree.com and its registered address is 5-8-352, 3rd Floor, R-11 312, Chapal Road Raghava Ratna Tower, Chirag Ali Lane, Abids Hyderabad Hyderabad TG 500001 IN , - , .</p>
+</div>
+{% endblock %}
+</body>
+</html>
